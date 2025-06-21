@@ -1,0 +1,210 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background:rgba(0, 0, 0, 0.9) url('https://media.istockphoto.com/id/2042526830/photo/successful-businesswoman-using-laptop-working-in-office-business-technology-corporate-concept.jpg?s=612x612&w=0&k=20&c=-NJyxcMesUAKzzPwoHXC10ZuBHPGa1dRp1gFl2T37o8=') center/cover no-repeat; 
+      height: 80vh;
+      background-blend-mode: darken;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero ,h2{
+     position: relative;
+     top: 10px;
+    }
+    .container4{
+      width: 100%;
+      display: flex;
+      height: 150px;
+      align-items: center;
+      justify-content: center;
+    }
+    .text{
+      width: 60%;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+     .img{
+      width: 40%;
+    }
+     .container1{
+      width: 100%;
+      display: flex;
+      height: 400px;
+      justify-content: center;
+      align-items: center;
+    }
+    .details{
+      width: 50%;
+      text-align: justify;
+    }
+    .project{
+      height: 100px;
+    }
+     .img1{
+      width: 50%;
+      display: flex;
+      position: relative;
+      left: 230px;
+    }
+    .container2{
+      width: 100%;
+      display: flex;
+      height: 300px;
+      background-color: black; 
+      color: white; 
+      justify-content: center;
+      align-items: center;
+    }
+    #para{
+      width: 60%;
+    }
+    #tact{
+      width: 40%;
+      position: relative;
+      left: 250px;
+    }
+    .service-icon {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      height: 100%;
+    }
+    .service-icon:hover{
+      background-color: #e85c2e;
+      color: white;
+      h5{
+        color: #f7f7f7;
+      }
+    }
+     #last{
+      background:rgba(45, 40, 40,1.0) url("./images/240_F_1194635226_DrXDRCiaIqpUuLO3xqIR7NEEpQjeV8tx.jpg") center/cover no-repeat;
+      background-blend-mode: darken;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }  
+    .foot {
+      background-color:white;
+      color: black;
+      height: 200px;
+      padding: 30px 0;
+      text-align: center;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+    }
+   .copy{
+    background-color: #e85c2e;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 5px;
+   }
+   .clsvertical{
+    border-left: 2px solid black;
+    height: 70px;
+    float: left;
+   }
+   .service-icon >h5{
+    color: #e85c2e;
+   }
+  .border{
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  .nav-link{
+    font-size:20px;
+    font: bold;
+  }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      margin: 0px;
+      padding: 40px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .service-box {
+      background-color: #f8f8f8;
+      border: 2px solid gray;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+    .service-box:hover,
+    .service-box.active {
+      background-color: #ef4d24;
+      color: white;
+    }
+    .service-box i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+    .service-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: inherit;
+    }
+    .service-box:hover .service-title,
+    .service-box.active .service-title {
+      color: #fff;
+    }
+    .service-description {
+      font-size: 14px;
+      color: inherit;
+    }
+    .service-box:hover .service-description,
+    .service-box.active .service-description {
+      color: #fff;
+    }
+  .carousel-item img{
+    height: 200px;
+    margin: 10px;
+    width: 200px;
+  }
+ .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: grey;
+      opacity: 0.5;
+      border: none;
+      margin: 0 6px;
+      transition: opacity 0.3s ease;
+    }
+    .carousel-indicators .active {
+      opacity: 1;
+      background-color: orange;
+    }
+.carousel {
+  position: relative;
+}
+.carousel-item img{
+  width: 170px;
+  height: 100px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -40px; 
+  left: 35%;
+  transform: translateX(-50%);
+}
+ .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0); 
+}
