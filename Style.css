@@ -21,6 +21,7 @@
       height: 150px;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
     .text{
       width: 60%;
@@ -206,4 +207,119 @@
  .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: brightness(0); 
+}
+/* ============================
+   📱 Small devices (≤576px)
+   ============================ */
+@media (max-width: 576px) {
+  .main h1, .main h2 {
+    font-size: 32px;
+  }
+
+  .container1, .container4, .container2 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .img1, .details, .img, .text, #tact, #para {
+    width: 100% !important;
+    position: static;
+    left: auto;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .foot {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carousel-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .project h2 {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* ============================
+   📱📲 Medium devices (≤768px)
+   ============================ */
+@media (max-width: 768px) {
+  .main h1, .main h2 {
+    font-size: 48px !important;
+  }
+
+  .container1, .container4 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .img1, .details, .text, .img {
+    width: 100% !important;
+    left: 0 !important;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foot {
+    flex-wrap: wrap;
+    height: auto;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    width: 130px;
+    height: 100px;
+  }
+}
+
+/* ============================
+   💻 Large devices (≥992px)
+   ============================ */
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container1, .container4, .container2 {
+    flex-direction: row;
+  }
+
+  .text {
+    width: 60%;
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  .img1 {
+    left: 230px;
+  }
+
+  #tact {
+    left: 250px;
+  }
 }
